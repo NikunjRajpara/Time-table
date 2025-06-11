@@ -16,8 +16,7 @@ The timetable is built using **HTML5** and **CSS3** and includes:
 
 ## 🖼️ Screenshot
 
-![Class Timetable Screenshot](![image](https://github.com/user-attachments/assets/7afc1e78-3af0-4ce8-92d1-b918fbc90943)
-)
+![image](https://github.com/user-attachments/assets/adc63d2e-203f-4aee-bb6c-f222d2029e82)
 
 > 📌 The screenshot above shows how the final output looks in the browser.
 
