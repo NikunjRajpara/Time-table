@@ -28,9 +28,9 @@ The timetable is built using **HTML5** and **CSS3** and includes:
 
 ## 📁 Folder Structure
 
-│
-├── index.html
 
+├── index.html
+│
 ├── style.css
 
 
