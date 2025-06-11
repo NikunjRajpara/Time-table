@@ -1,6 +1,6 @@
 ﻿# 📅 Class Timetable - Marwadi University (Semester 7, TC1)
 
-This project displays a neatly designed **class timetable** for Semester 7 (TC1) students of **Marwadi University**, Department of **Computer Engineering**.
+This project presents a well-designed class timetable for Semester 7 (TC1) students of Marwadi University, Department of Computer Engineering.
 
 ## 🔍 Overview
 
@@ -11,7 +11,7 @@ The timetable is built using **HTML5** and **CSS3** and includes:
   - Subject Name
   - Faculty Name
   - Classroom Details
-- Stylish responsive layout
+- Stylish layout
 - Visual break indicator
 
 ## 🖼️ Screenshot
@@ -25,7 +25,6 @@ The timetable is built using **HTML5** and **CSS3** and includes:
 - **HTML5**
 - **CSS3**
 - Grid Layout
-- Responsive Design
 
 ## 📁 Folder Structure
 
