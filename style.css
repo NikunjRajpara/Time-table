@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed to flex-start to align content to the top */
+    min-height: 100vh; /* Changed back to min-height for flexibility */
+    margin: 0;
+    padding: 0;
+}
+
+.timetable-container {
+    width: 95%;
+    max-width: 1400px;
+    background-color: #ffffff;
+    padding: 20px 25px 25px; /* Adjust top padding as needed */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    /* Removed margin-top/bottom auto, as we're aligning to flex-start in body */
+    margin-top: 20px; /* Add some top margin to center the timetable container */
+    margin-bottom: 20px;
+}
+
+.timetable-header {
+    text-align: center; /* Still center-aligns text within its direct children */
+    margin-bottom: 20px;
+    color: #333;
+    padding-top: 0;
+    /* position: relative;  Not needed anymore for this specific layout */
+}
+
+/* NEW FLEX CONTAINER FOR TOP ROW */
+.top-header-row {
+    display: flex;
+    justify-content: space-between; /* Pushes logos to ends */
+    align-items: center; /* Vertically centers logos and text */
+    padding: 0 0; /* Remove padding if not needed, or add if logos need more inner space */
+    margin-bottom: 10px; /* Space between this row and the Class Timetable H1 */
+}
+
+.university-logo-left,
+.university-logo-right {
+    max-height: 90px; /* Adjust as needed */
+    width: auto;
+    display: block; /* Ensures proper image behavior */
+    flex-shrink: 0; /* Prevents logos from shrinking too much if text is long */
+}
+
+/* Make college name take available center space */
+.college-name {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #0056b3;
+    margin: 0 20px; /* Adjust horizontal margin as needed to control gap from logos */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap; /* Prevents text from wrapping if it gets too long */
+}
+
+/* This div now holds the Class Timetable heading and coordinator info */
+.header-main-content {
+    margin-top: 10px; /* Space between the college name row and this content */
+    text-align: center; /* Ensure contents are centered */
+}
+
+
+.timetable-header h1 {
+    margin: 0; /* Reset default margin */
+    font-size: 2.2em;
+    color: #0056b3;
+}
+
+.timetable-header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.timetable-grid {
+    display: grid;
+    grid-template-columns: 0.8fr repeat(6, 1fr);
+    grid-template-rows: auto repeat(2, 1.5fr) 0.5fr repeat(2, 1.5fr);
+    gap: 10px;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.time-slot {
+    background-color: #6c757d;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.subject-card {
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.subject-name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.faculty-name, .class-room {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* Subject Specific Colors */
+.os { background-color: #17a2b8; }
+.cc { background-color: #28a745; }
+.ad { background-color: #ffc107; color: #333; }
+.wt { background-color: #dc3545; }
+.ai { background-color: #6f42c1; }
+.dsa { background-color: #fd7e14; }
+
+#break {
+    grid-column: 2 / span 6;
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
